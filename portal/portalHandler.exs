@@ -118,7 +118,7 @@ defmodule PGS.PortalHandler do
     Sys.Player.setSharedProperty("ore", ore)
 
     bar = PGS.SMTest.Utils.foo
-    Sys.Log.debug("bar: #{bar}")
+    Sys.Log.info("bar: #{bar}")
 
     %{"ore" => ore}
   end
