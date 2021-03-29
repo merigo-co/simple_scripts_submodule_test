@@ -116,6 +116,10 @@ defmodule PGS.PortalHandler do
     delta = String.to_integer(data["arg0"])
     ore = Sys.Player.sharedProperty("ore") + delta
     Sys.Player.setSharedProperty("ore", ore)
+
+    bar = PGS.SMTest.Utils.foo
+    Sys.Log.debug("bar: #{bar}")
+
     %{"ore" => ore}
   end
 
